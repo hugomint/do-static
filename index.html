@@ -45,6 +45,7 @@
 
 <body>
     <p id="color">#000000</p>
+    <p>Dave</p>
     <script>
         function randomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
@@ -78,7 +79,7 @@
                 var hex = Math.round(x * 255).toString(16);
                 return hex.length === 1 ? '0' + hex : hex;
             };
-            return '#' + toHex(r) + toHex(g) + toHex(b) + ' DAVE';
+            return '#' + toHex(r) + toHex(g) + toHex(b);
         }
 
         window.onload = function () {
